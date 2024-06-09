@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/white_home_icon"
+        android:title="@string/home_icon"
+        />
+    <item
+        android:id="@+id/navigation_insights"
+        android:icon="@drawable/white_insights_icon"
+        android:title="@string/insights_icon"
+        />
+    <item android:id="@+id/add_wrap"
+        android:icon="@drawable/baseline_add_24"
+        android:title="New Wrap"/>
+</menu>

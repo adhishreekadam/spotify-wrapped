@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="380dp"
+    android:layout_height="660dp"
+    android:id="@+id/top_genre_cardview"
+    app:cardCornerRadius="25dp"
+    android:backgroundTint="@color/spotify_dark">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/top_genres_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Genres"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/circular_std_medium_500" />
+
+        <TextView
+            android:id="@+id/top_genre_1"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="51dp"
+            android:layout_marginLeft="140dp"
+            android:fontFamily="@font/circular_std_medium_500"
+            android:text="Genre 1"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            style="@style/autoscroll" />
+
+        <TextView
+            android:id="@+id/top_genre_2"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="200dp"
+            android:fontFamily="@font/circular_std_medium_500"
+            android:text="Genre 2"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            style="@style/autoscroll" />
+
+        <TextView
+            android:id="@+id/top_genre_3"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:layout_marginLeft="230dp"
+            android:fontFamily="@font/circular_std_medium_500"
+            android:text="Genre 3"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            style="@style/autoscroll" />
+
+        <TextView
+            android:id="@+id/top_genre_4"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:layout_marginLeft="205dp"
+            android:fontFamily="@font/circular_std_medium_500"
+            android:text="Genre 4"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            style="@style/autoscroll" />
+
+        <TextView
+            android:id="@+id/top_genre_5"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="140dp"
+            android:fontFamily="@font/circular_std_medium_500"
+            android:text="Genre 5"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            style="@style/autoscroll" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/top_genres_back_button"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="100dp"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:textStyle="bold"
+                android:fontFamily="@font/circular_std_medium_500"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/top_genres_next_button"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginLeft="100dp"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textStyle="bold"
+                android:fontFamily="@font/circular_std_medium_500"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

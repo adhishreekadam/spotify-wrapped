@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spotify_grey"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:text="How far back would you like to see?"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:fontFamily="@font/circular_std_medium_500"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/wrap_button_short"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/spotify_green"
+        android:fontFamily="@font/circular_std_medium_500"
+        android:text="Moments ago..."
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/wrap_button_medium"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/spotify_green"
+        android:fontFamily="@font/circular_std_medium_500"
+        android:text="A few months ago..."
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/wrap_button_long"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/spotify_green"
+        android:fontFamily="@font/circular_std_medium_500"
+        android:text="A year ago..."
+        android:textSize="16sp" />
+
+
+</LinearLayout>

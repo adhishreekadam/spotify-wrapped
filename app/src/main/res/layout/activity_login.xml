@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/main_background"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@color/spotify_grey">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:paddingTop="24dp">
+
+                <TextView
+                    android:id="@+id/sign_in_selection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:paddingBottom="6dp"
+                    android:text="SIGN IN"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/circular_std_medium_500"
+                    android:textColor="@color/white"
+                    android:background="@drawable/green_underline" />
+
+                <TextView
+                    android:id="@+id/sign_up_selection_clickable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SIGN UP"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/circular_std_medium_500"
+                    android:textColor="@color/white"
+                    android:clickable="true" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sign_in_with_spotify"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/spotify_logo"
+                android:text="Sign in with Spotify"
+                android:textSize="16sp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/circular_std_medium_500"
+                android:backgroundTint="@color/spotify_green" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/circular_std_medium_500"
+                android:text="or"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/email_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_fields"
+                android:fontFamily="@font/circular_std_medium_500"
+                android:hint="Email"
+                android:paddingLeft="25dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/password_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_fields"
+                android:fontFamily="@font/circular_std_medium_500"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="25dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SIGN IN"
+                android:textSize="16sp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/circular_std_medium_500"
+                android:backgroundTint="@color/spotify_green" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:visibility="gone"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/spotify_grey"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="24dp">
+
+                <TextView
+                    android:id="@+id/sign_in_selection_clickable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:fontFamily="@font/circular_std_medium_500"
+                    android:paddingRight="40dp"
+                    android:text="SIGN IN"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/sign_up_selection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/green_underline"
+                    android:fontFamily="@font/circular_std_medium_500"
+                    android:paddingBottom="6dp"
+                    android:text="SIGN UP"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/linkSpotifyButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/spotify_green"
+                android:drawableLeft="@drawable/spotify_logo"
+                android:fontFamily="@font/circular_std_medium_500"
+                android:text="Link to Spotify"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/username_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_fields"
+                android:fontFamily="@font/circular_std_medium_500"
+                android:hint="Enter Your Username"
+                android:paddingLeft="25dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/password_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_fields"
+                android:fontFamily="@font/circular_std_medium_500"
+                android:hint="Enter Your Password"
+                android:inputType="textPassword"
+                android:paddingLeft="25dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/signup_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/spotify_green"
+                android:fontFamily="@font/circular_std_medium_500"
+                android:text="SIGN UP"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
