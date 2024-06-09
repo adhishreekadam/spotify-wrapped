@@ -1,7 +1,7 @@
 # Spotify Wrapped App for CS 2340 Second Project
 This app serves as a platform for monitoring your music engagement and receiving tailored overviews of your listening patterns throughout the year. Users can access their archive of past wraps on their home page and gain insights into their music preferences and listening behaviors. The insights page analyzes these wraps and the user's listening habits, providing diverse conclusions based on individual music tastes such as preferred style, artists and genre. 
 
-## Tech:
+## Tech
 - Language: Java
 - IDE: Android Studio
 - Firebase cloud storage
